@@ -10,86 +10,131 @@
     <h1> Registro de usuario</h1>
     
 <form >
+     <!--  Formulario  1  de  tipo  texto-->
     <div>
-     <!--  LABEL : es una descripcion de que espera el usuario recibir en este campo  -->
-      <label for="fullname"> nombre completo: </label>
-      <!-- INPUT : es la etiqueta que usamos para que el usuario pueda ingresar informacion  -->
-       <!--  ID: conecta  el INPUT con el LABEL atraves del FOR-->
-      <input 
-            type="text"       
-            id="fullname" 
-            name="fullname"
-            laceholder=" Jhon Doe"
-            required
-            maxlength="10"
-            minlength="3"
-        />
-
-     </div>
-     <div>
-          <label for="mail"> Email: </label>
+          <!--  LABEL : es una descripcion de que espera el usuario recibir en este campo  -->
+          <label for="fullname"> nombre completo: </label>
+          <!-- INPUT : es la etiqueta que usamos para que el usuario pueda ingresar informacion  -->
+          <!--  ID: conecta  el INPUT con el LABEL atraves del FOR-->
+          <!--  Name:  nombre programatico -->
           <input 
-                type="email"
-                type="text" 
-                id="mail" 
-                type="text"
-                id="fullname"
+                type="text"       
+                id="fullname" 
                 name="fullname"
                 placeholder="Jhon Doe"
                 required
                 maxlength="10"
                 minlength="3"
-          >
+           />
      </div>
-   
+      <!--  Formulario  2 de  tipo  mail -->
      <div>
-          <label for="mail"> Email</label>
+          <label for="email"> Email: </label>
           <input 
-          type="email"
-          type="text" 
-          id="mail" 
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Jhon Doe"
-         required
-         maxlength="10"
-          minlength="3"
-          >
+                type="email"
+                placeholder="Jhon Doe@mail.com"
+                required
+                id="email" 
+                name="email"
+           />
      </div>
-   
+      <!--  Formulario  3  de password o contraseña-->
      <div>
-          <label for="mail"> Email</label>
-          <input 
-          type="email"
-          type="text" 
-          id="mail" 
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Jhon Doe"
-         required
-         maxlength="10"
-          minlength="3"
-          >
+           <label for="password"> Contraseña: </label>
+           <input 
+                type="password"
+                id="pasword" 
+                required
+                name="password"
+                placeholder="pasword"
+           />
      </div>
-   
+    <!--  Formulario  4   de tipo  radio -->
+      <!--  importante en name debe tener el mismo valor para que 
+            solo se pueda seleccionar una opcion -->
      <div>
-          <label for="mail"> Email</label>
-          <input 
-          type="email"
-          type="text" 
-          id="mail" 
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Jhon Doe"
-         required
-         maxlength="10"
-          minlength="3"
-          >
+           <span> seleccione  su  lenguaje favorito</span>
+           <div>     
+                 <label for="html"> HTML</label>
+                 <input 
+                 type="radio"
+                 name="lenguaje_favorito"
+                 id="html" 
+                 >
+           </div>
+           <div>
+                <label for="css"> CSS</label>
+                <input 
+                 type="radio"
+                 name="lenguaje_favorito"
+                 id="css" 
+                 >
+           </div>
+           <div>
+                <label for="js">JS</label>
+                <input 
+                type="radio"
+                name="lenguaje_favorito"
+                id="js" 
+                >
+           </div>
      </div>
    
+  <!--  Formulario  4   de tipo  radio -->
+      <!--  importante en name debe tener el mismo valor para que 
+            solo se pueda seleccionar una opcion -->
+     <div>
+           <span> seleccione  los  lenguajes conocidos</span>
+           <div>     
+                 <label for="know_html"> HTML</label>
+                 <input 
+                 type="checkbox"
+                 name="lenguaje_conocido"
+                 id="know_html" 
+                 >
+           </div>
+           <div>
+                <label for="know_css"> CSS</label>
+                <input 
+                 type="checkbox"
+                 name="lenguaje_conocido"
+                 id="know_css" 
+                 >
+           </div>
+           <div>
+                <label for="know_js">JS</label>
+                <input 
+                type="checkbox"
+                name="lenguaje_conocido"
+                id="know_js" 
+                >
+           </div>
+     </div>   
+
+     <!--  Formulario 5  select: combo de opciones -->
+       <div>
+            <label for="pais">Elige tu pais de origen:</label>
+           <select name="pais" id="pais" >
+               <option value="AR">Argentina</option>
+               <option value="FR">Francia</option>
+               <option value="BR">Brasil</option>
+               <option value="No" selected disabled>No selecionado</option>
+           </select>  
+       </div>
+
+       <div>
+            <label for="comentario">Dejanos un comentario :</label>
+               <textarea
+                     name="comentario" 
+                     id="comentario" 
+                     placeholder="hola estoy en HTML" 
+                     rows="10"
+                     cols="30"
+                     maxlength="300"
+               ></textarea>
+       </div>
+
+    <!--  Boton 1  -->
      <button type="submit">Registrar    </button>
 </form>
 
